@@ -1,0 +1,11 @@
+bash
+cd database
+sqlite3 estoque.db
+
+CREATE TABLE produtos (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    nome TEXT NOT NULL,
+    quantidade INTEGER NOT NULL,
+    preco REAL NOT NULL,
+    criado_em DATETIME DEFAULT CURRENT_TIMESTAMP
+);
